@@ -1,0 +1,14 @@
+#!/usr/bin/zsh
+
+stdbuf -oL ./nocomment --no-empty |
+while read -r line; do
+  pomdp="$line"
+
+  for model in ${models[@]}; do
+    echo $pomdp $model
+    bash info.bash $pomdp $model $@
+    echo
+  done
+done
+
+exit 0

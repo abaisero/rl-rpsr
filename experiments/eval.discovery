@@ -1,0 +1,24 @@
+#!/bin/bash
+
+mkdir -p outputs/
+
+envs=(bsr)
+policies=(random bsr psr rpsr)
+
+cmd_options=()
+cmd_options+=(--num-steps 100)
+cmd_options+=(--num-simulations 100)
+
+stdbuf -oL ./nocomment --no-empty |
+while read -r line; do
+  pomdp="$line"
+
+  for env in ${envs[@]}; do
+    for policy in ${policies[@]}; do
+      jn=vi.$env.$policy
+      sbatch --job-name $jn eval.bash $pomdp $env $policy ${cmd_options[@]} $@
+    done
+  done
+done
+
+exit 0

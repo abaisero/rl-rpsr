@@ -1,0 +1,14 @@
+#!/usr/bin/zsh
+
+models=(psr rpsr)
+
+stdbuf -oL ./nocomment --no-empty |
+while read -r line; do
+  pomdp="$line"
+
+  for model in ${models[@]}; do
+    bash search.bash $pomdp $model $@
+  done
+done
+
+exit 0

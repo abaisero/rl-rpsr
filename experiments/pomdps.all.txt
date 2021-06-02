@@ -1,0 +1,73 @@
+# baseball.POMDP # too big
+# bridge-repair.POMDP  # unsupported cost
+# ejs3.POMDP  # unsupported cost
+# fourth.POMDP  # too big
+# hanks.95.POMDP  # same as paint.95.POMDP
+# heavenhell.95.pomdp  # duplicate
+# line4-2goals.95.POMDP  # duplicate
+# marking2.POMDP  # virtually same as marking.POMDP # BUT NOT THE SAME
+# network.95.POMDP # same as network.POMDP
+# tag_avoid.pomdp # too big
+# tiger.95.POMDP  # same as tiger.aaai.POMDP but for discount
+# 1d.noisy.POMDP  # why not here...
+# aloha.10.POMDP  # why not here...
+1d.POMDP
+4x3.95.POMDP
+4x4.95.POMDP
+4x5x2.95.POMDP
+aloha.30.POMDP
+bulkhead.A.POMDP
+cheese.95.POMDP
+cheng.D3-1.POMDP
+cheng.D3-2.POMDP
+cheng.D3-3.POMDP
+cheng.D3-4.POMDP
+cheng.D3-5.POMDP
+cheng.D4-1.POMDP
+cheng.D4-2.POMDP
+cheng.D4-3.POMDP
+cheng.D4-4.POMDP
+cheng.D4-5.POMDP
+cheng.D5-1.POMDP
+cit.POMDP
+concert.POMDP
+ejs-ft-counter.POMDP
+ejs1.POMDP
+ejs2.POMDP
+ejs4.POMDP
+ejs5.POMDP
+ejs6.POMDP
+ejs7.POMDP
+floatreset.pomdp
+hallway.POMDP
+hallway2.POMDP
+heavenhell.pomdp
+iff.POMDP
+learning.c2.POMDP
+learning.c3.POMDP
+learning.c4.POMDP
+line4-2goals.POMDP
+loadunload.pomdp
+machine.POMDP
+marking.POMDP
+mcc-example1.POMDP
+mcc-example2.POMDP
+milos-aaai97.POMDP
+mini-hall2.POMDP
+mit.POMDP
+network.POMDP
+paint.95.POMDP
+parr95.95.POMDP
+pentagon.POMDP
+query.s2.POMDP
+query.s3.POMDP
+query.s4.POMDP
+saci-s100-a10-z31.POMDP
+saci-s12-a6-z5.95.POMDP
+shuttle.95.POMDP
+stand-tiger.95.POMDP
+sunysb.POMDP
+tiger-grid.POMDP
+tiger.aaai.POMDP
+web-ad.POMDP
+web-mall.POMDP

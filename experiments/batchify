@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if (( $# != 2 )); then
+    echo "Script requires exactly 2 arguments"
+fi
+
+batch_size=$1
+batch_num=$2
+
+begin=$(expr $batch_size \* \( $batch_num - 1 \) + 1)
+tail -n +$begin | head -n $batch_size
+
+exit 0

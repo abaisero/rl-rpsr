@@ -1,0 +1,11 @@
+#!/usr/bin/zsh
+
+stdbuf -oL ./nocomment --no-empty |
+while read -r line; do
+  pomdp="$line"
+
+  ./make_eval_table.py evals/eval.$pomdp.txt | sed 's/^\\begin{table}$/\\begin{table}[h]/'
+  echo
+done
+
+exit 0

@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# read the options
+OPTIONS=$(getopt -o n --long no-empty -- "$@")
+eval set -- "$OPTIONS"
+
+# extract options and their arguments into variables.
+noempty=false
+while true ; do
+  case "$1" in
+    -n|--no-empty)
+      noempty=true ; shift ;;
+    --) shift ; break ;;
+    *) echo "Internal error!" ; exit 1 ;;
+  esac
+done
+
+# program start
+
+if $noempty; then
+  sed -e 's/[[:space:]]*\#.*//' -e '/^$/d'
+else
+  sed -e 's/[[:space:]]*\#.*//'
+fi
+
+exit 0

@@ -1,0 +1,13 @@
+#!/bin/bash
+
+mkdir -p outputs/
+
+stdbuf -oL ./nocomment --no-empty |
+while read -r line; do
+  pomdp="$line"
+
+  jn=search.$pomdp
+  sbatch --job-name $jn search.sbatch $pomdp $@
+done
+
+exit 0

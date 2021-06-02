@@ -1,0 +1,29 @@
+#!/usr/bin/zsh
+
+pomdps=(
+  POMDP-loadunload-continuing-v0
+  POMDP-4x3-continuing-v0
+  POMDP-heavenhell-continuing-v0
+)
+
+models=(bsr psr rpsr)
+
+for pomdp in ${pomdps[@]}; do
+  { echo POMDP ENV POLICY $models
+  for env in ${models[@]}; do
+    for policy in ${models[@]}; do
+      fin=eval_results/${pomdp}__$(echo $models | sed 's/ /_/g')__${env}__${policy}.txt
+
+      # echo $pomdp $env $policy $(./eval_results.py $pomdp $fin)
+      # sem -j+0 ./eval_table.py $pomdp $fin
+    done
+  done
+  } | column -t
+
+  echo
+  echo
+done
+
+sem --wait
+
+exit 0

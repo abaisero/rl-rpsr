@@ -1,0 +1,25 @@
+#!/usr/bin/zsh
+
+mkdir -p evals/
+
+envs=(rpsr)
+policies=(random bsr psr rpsr)
+
+cmd_options=()
+cmd_options+=(--num-steps 100)
+cmd_options+=(--num-simulations 1000)
+
+stdbuf -oL ./nocomment --no-empty |
+while read -r line; do
+  pomdp="$line"
+
+  {
+  for env in ${envs[@]}; do
+    for policy in ${policies[@]}; do
+      bash eval.bash $pomdp $env $policy ${cmd_options[@]} $@
+    done
+  done
+  } | xargs -l echo $pomdp | tee evals/eval.$pomdp.txt
+done
+
+exit 0

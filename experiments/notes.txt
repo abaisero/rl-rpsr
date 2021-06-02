@@ -1,0 +1,5 @@
+* linea4-2goals has discount factor 1.0 and non-negative rewards -> infinite value => we changed the discount factor to 0.95
+* heavenhell has discount factor of 0.99 -> slow vi convergence => we changed the discount factor to 0.95
+
+* iff is super slow because of the cross-sum!
+  * actual incremental pruning would (should) help here!

@@ -1,0 +1,18 @@
+#!/usr/bin/zsh
+
+models=(bsr psr rpsr)
+
+cmd_options=()
+cmd_options+=(--horizon 50)
+cmd_options+=(--metric bellman-at-start)
+
+stdbuf -oL ./nocomment --no-empty |
+while read -r line; do
+  pomdp="$line"
+
+  for model in ${models[@]}; do
+    bash vi.bash $pomdp $model ${cmd_options[@]} $@
+  done
+done
+
+exit 0
