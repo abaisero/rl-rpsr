@@ -2,10 +2,10 @@
 import argparse
 import logging
 
-from rl_psr import psr, rpsr
-from rl_psr.pomdp import POMDP_Model
-from rl_psr.serializer import CoreSerializer
-from rl_psr.util import SearchType
+from rl_rpsr import psr, rpsr
+from rl_rpsr.pomdp import POMDP_Model
+from rl_rpsr.serializer import CoreSerializer
+from rl_rpsr.util import SearchType
 
 
 def main_search(args):

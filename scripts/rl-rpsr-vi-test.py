@@ -3,8 +3,8 @@ import argparse
 import logging
 
 import numpy as np
-from rl_psr import bsr, pomdp, psr, rpsr
-from rl_psr.serializer import IntentsSerializer, TestsSerializer, VF_Serializer
+from rl_rpsr import bsr, pomdp, psr, rpsr
+from rl_rpsr.serializer import IntentsSerializer, TestsSerializer, VF_Serializer
 
 
 def main_test(args):

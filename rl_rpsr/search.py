@@ -1,8 +1,8 @@
 import abc
 from typing import Union
 
-from rl_psr.core import Intents, Tests
-from rl_psr.pomdp import POMDP_Model
+from rl_rpsr.core import Intents, Tests
+from rl_rpsr.pomdp import POMDP_Model
 
 
 class Searcher(metaclass=abc.ABCMeta):

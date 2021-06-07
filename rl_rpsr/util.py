@@ -1,7 +1,7 @@
 import enum
 from typing import Iterator
 
-from rl_psr.core import Interaction
+from rl_rpsr.core import Interaction
 
 __all__ = ['SearchType', 'VI_Type', 'interactions']
 

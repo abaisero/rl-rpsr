@@ -1,7 +1,7 @@
 import unittest
 
-import rl_psr.testing as testing
-from rl_psr.core import Intent, Test
+import rl_rpsr.testing as testing
+from rl_rpsr.core import Intent, Test
 
 
 class TestInteraction(unittest.TestCase):

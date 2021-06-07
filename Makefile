@@ -1,7 +1,7 @@
 .PHONY: lint format test pylint mypy black isort
 
-FOLDERS=rl_psr/ scripts/ tests/
-FILES=$(shell find rl_psr scripts tests -name '*.py')
+FOLDERS=rl_rpsr/ scripts/ tests/
+FILES=$(shell find rl_rpsr scripts tests -name '*.py')
 
 lint: pylint mypy
 

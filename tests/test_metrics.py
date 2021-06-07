@@ -3,9 +3,8 @@ import unittest
 
 import numpy as np
 import numpy.random as rnd
-
-from rl_psr import testing
-from rl_psr.metrics import AlphaVF_Metric, BellmanAtStartVF_Metric
+from rl_rpsr import testing
+from rl_rpsr.metrics import AlphaVF_Metric, BellmanAtStartVF_Metric
 
 
 class TestAlphaVF_Metric(unittest.TestCase):

@@ -3,11 +3,11 @@ from functools import lru_cache
 from typing import FrozenSet
 
 import numpy as np
-from rl_psr.core import Intent, Intents, Test
-from rl_psr.linalg import linearly_independent
-from rl_psr.pomdp import POMDP_Model
-from rl_psr.search import Searcher
-from rl_psr.util import SearchType, interactions
+from rl_rpsr.core import Intent, Intents, Test
+from rl_rpsr.linalg import linearly_independent
+from rl_rpsr.pomdp import POMDP_Model
+from rl_rpsr.search import Searcher
+from rl_rpsr.util import SearchType, interactions
 
 __all__ = ['searcher_factory']
 

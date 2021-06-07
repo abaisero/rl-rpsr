@@ -2,9 +2,9 @@
 import argparse
 import logging
 
-from rl_psr import bsr, psr, rpsr
-from rl_psr.pomdp import POMDP_Model
-from rl_psr.serializer import IntentsSerializer, TestsSerializer, VF_Serializer
+from rl_rpsr import bsr, psr, rpsr
+from rl_rpsr.pomdp import POMDP_Model
+from rl_rpsr.serializer import IntentsSerializer, TestsSerializer, VF_Serializer
 
 
 def make_random_policy(env):

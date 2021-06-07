@@ -3,9 +3,8 @@ from typing import Any, Callable, List, Optional, TypeVar
 
 import cvxpy as cp
 import numpy as np
+from rl_rpsr.linalg import cross_sum
 from scipy.optimize import linprog
-
-from rl_psr.linalg import cross_sum
 
 try:
     from cylp.cy import CyClpSimplex

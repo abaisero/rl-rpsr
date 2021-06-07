@@ -1,8 +1,7 @@
 import unittest
 
 import numpy as np
-
-from rl_psr.linalg import (
+from rl_rpsr.linalg import (
     linearly_independent_lstsq,
     linearly_independent_pinv,
     linearly_independent_rank,

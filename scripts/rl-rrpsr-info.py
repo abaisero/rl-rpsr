@@ -4,9 +4,9 @@ import logging
 
 import numpy as np
 import pandas as pd
-from rl_psr import psr, rpsr
-from rl_psr.pomdp import POMDP_Model
-from rl_psr.serializer import IntentsSerializer, TestsSerializer
+from rl_rpsr import psr, rpsr
+from rl_rpsr.pomdp import POMDP_Model
+from rl_rpsr.serializer import IntentsSerializer, TestsSerializer
 
 
 def rmse(data: np.ndarray):

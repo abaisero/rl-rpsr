@@ -4,10 +4,10 @@ import glob
 import logging
 
 import matplotlib.pyplot as plt
-from rl_psr import bsr, psr, rpsr
-from rl_psr.metrics import VF_Metric
-from rl_psr.pomdp import POMDP_Model
-from rl_psr.serializer import IntentsSerializer, TestsSerializer, VF_Serializer
+from rl_rpsr import bsr, psr, rpsr
+from rl_rpsr.metrics import VF_Metric
+from rl_rpsr.pomdp import POMDP_Model
+from rl_rpsr.serializer import IntentsSerializer, TestsSerializer, VF_Serializer
 
 
 def main_vi(args):

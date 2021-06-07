@@ -2,16 +2,16 @@
 import argparse
 import logging
 
-from rl_psr import bsr, psr, rpsr
-from rl_psr.metrics import VF_Metric
-from rl_psr.pomdp import POMDP_Model
-from rl_psr.serializer import (
+from rl_rpsr import bsr, psr, rpsr
+from rl_rpsr.metrics import VF_Metric
+from rl_rpsr.pomdp import POMDP_Model
+from rl_rpsr.serializer import (
     AlphaSerializer,
     IntentsSerializer,
     TestsSerializer,
     VF_Serializer,
 )
-from rl_psr.util import VI_Type
+from rl_rpsr.util import VI_Type
 
 
 def main_vi(args):

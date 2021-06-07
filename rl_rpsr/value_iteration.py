@@ -2,8 +2,7 @@ import abc
 import logging
 
 import numpy as np
-
-from rl_psr.value_function import Alpha, ValueFunction
+from rl_rpsr.value_function import Alpha, ValueFunction
 
 
 class VI_Algo(metaclass=abc.ABCMeta):

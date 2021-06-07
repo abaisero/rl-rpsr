@@ -1,8 +1,8 @@
 import unittest
 
-import rl_psr.testing as testing
-from rl_psr.core import Intent, Intents, Interaction, Test, Tests
-from rl_psr.value_function import Alpha, ValueFunction
+import rl_rpsr.testing as testing
+from rl_rpsr.core import Intent, Intents, Interaction, Test, Tests
+from rl_rpsr.value_function import Alpha, ValueFunction
 
 
 class TestTesting(unittest.TestCase):

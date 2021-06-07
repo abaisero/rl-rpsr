@@ -3,9 +3,8 @@ from __future__ import annotations
 import logging
 
 import gym
-
 from gym_pomdps import POMDP
-from rl_psr import matrices
+from rl_rpsr import matrices
 
 __all__ = ['POMDP_Model']
 

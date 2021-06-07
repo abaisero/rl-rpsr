@@ -2,8 +2,7 @@ import unittest
 
 import numpy as np
 import numpy.random as rnd
-
-from rl_psr.pruning import purge
+from rl_rpsr.pruning import purge
 
 
 class TestPurge(unittest.TestCase):

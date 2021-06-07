@@ -4,9 +4,9 @@ import logging
 from dataclasses import dataclass, field
 from typing import List
 
-from rl_psr import bsr, pomdp, psr, rpsr
-from rl_psr.policy import ModelPolicy, Policy, RandomPolicy
-from rl_psr.serializer import IntentsSerializer, TestsSerializer, VF_Serializer
+from rl_rpsr import bsr, pomdp, psr, rpsr
+from rl_rpsr.policy import ModelPolicy, Policy, RandomPolicy
+from rl_rpsr.serializer import IntentsSerializer, TestsSerializer, VF_Serializer
 
 
 def make_policy(models, pomdp_model, args) -> Policy:

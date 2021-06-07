@@ -1,9 +1,8 @@
 import random
 
 import numpy.random as rnd
-
-from rl_psr.core import Intent, Intents, Interaction, Test, Tests
-from rl_psr.value_function import Alpha, ValueFunction
+from rl_rpsr.core import Intent, Intents, Interaction, Test, Tests
+from rl_rpsr.value_function import Alpha, ValueFunction
 
 
 def random_action(num_actions, extended=False) -> int:

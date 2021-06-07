@@ -2,12 +2,11 @@ import itertools as itt
 from typing import List, Optional, Sequence
 
 import numpy as np
-
-from rl_psr.linalg import cross_sum
-from rl_psr.pruning import inc_prune, purge
-from rl_psr.util import VI_Type
-from rl_psr.value_function import Alpha, ValueFunction
-from rl_psr.value_iteration import VI_Algo
+from rl_rpsr.linalg import cross_sum
+from rl_rpsr.pruning import inc_prune, purge
+from rl_rpsr.util import VI_Type
+from rl_rpsr.value_function import Alpha, ValueFunction
+from rl_rpsr.value_iteration import VI_Algo
 
 from .model import BSR_Model
 

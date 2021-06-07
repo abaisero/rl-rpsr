@@ -4,9 +4,8 @@ import abc
 import logging
 
 import numpy as np
-
-from rl_psr.linalg import max_bigraph_distance
-from rl_psr.value_function import ValueFunction
+from rl_rpsr.linalg import max_bigraph_distance
+from rl_rpsr.value_function import ValueFunction
 
 __all__ = ['AlphaVF_Metric', 'BellmanAtStartVF_Metric']
 

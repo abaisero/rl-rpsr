@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from gym_pomdps.belief import belief_step, expected_obs, expected_reward
-from rl_psr.pomdp import POMDP_Model
+from rl_rpsr.pomdp import POMDP_Model
 
 __all__ = ['BSR_Model']
 

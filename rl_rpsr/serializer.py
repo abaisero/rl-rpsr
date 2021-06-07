@@ -4,9 +4,8 @@ from typing import Any, Union
 
 import numpy as np
 import yaml
-
-from rl_psr.core import Intents, Tests
-from rl_psr.value_function import ValueFunction
+from rl_rpsr.core import Intents, Tests
+from rl_rpsr.value_function import ValueFunction
 
 __all__ = [
     'TestsSerializer',
